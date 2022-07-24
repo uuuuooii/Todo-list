@@ -1,0 +1,22 @@
+.body {
+    margin: 0;
+}
+
+.Header {
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(223, 238, 251);
+    font-size: 25px;
+    max-width:1200px;
+    min-width: 800px;
+} 
+.Header p{ 
+    margin-left: 320px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    
+}
