@@ -7,11 +7,11 @@ body{
 .App {
   margin: auto;
 
-  
   background-image: linear-gradient(70deg, blue, pink);
-  
+  background-size:cover;
   
   height:100vh;
+  overflow-y: auto;
   display:flex;
   flex-direction: column;  
   align-items: center;
