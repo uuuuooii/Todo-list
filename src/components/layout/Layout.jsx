@@ -4,11 +4,8 @@ import Form from '../form/Form';
 import List from '../list/List';
 import Header from '../header/Header';
 
-
-
 const Layout = () => {
   const [todoList, setTodoList] = useState([]);
-
   const addItem = (title, contents) => {
     const newItem = {
       id: todoList.length + 1, // id 값
@@ -16,10 +13,11 @@ const Layout = () => {
       contents: contents, // 내용
       done: false, // 완료했는지 아닌지
     };
-
     const newItems = [...todoList, newItem];
     setTodoList(newItems);
   };
+  
+  //디스패치하고 딜리트 투드 하고 아이디
   
   const deleteItem = (id) => { //삭제 기능을 핸들링 할수 있는 함수 추가
     const newItems = [...todoList].filter((item) => item.id !== id); //리액트가 제 랜더링하면 화면에 반영이 됩니다. 이럴때 리액트에서는 useState를 사용합니다.
@@ -42,7 +40,6 @@ const Layout = () => {
       if (item.id === id) item.done = !item.done;
       return item;
     });
-
     setTodoList(newTodos);
   };
 
